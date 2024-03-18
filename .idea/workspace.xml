@@ -7,17 +7,34 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eb37f1c-6eeb-4725-9580-440c950fa513" name="Changes" comment="Initial Commit" />
+    <list default="true" id="2eb37f1c-6eeb-4725-9580-440c950fa513" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/create_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="5fqyzii2" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -33,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/facky/Documents/My Projects/Googlag-server&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -46,6 +63,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\facky\Documents\GitHub\goolag-server\src\static" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cargo.Run Googlag-server">
     <configuration name="Run Googlag-server" type="CargoCommandRunConfiguration" factoryName="Cargo Command" singleton="false">
       <option name="command" value="run --package Googlag-server --bin Googlag-server" />
@@ -107,6 +129,17 @@
       <workItem from="1709744122501" duration="86000" />
       <workItem from="1710146988997" duration="4000" />
       <workItem from="1710516572326" duration="1487000" />
+      <workItem from="1710528675346" duration="1449000" />
+      <workItem from="1710530418756" duration="7631000" />
+      <workItem from="1710724224786" duration="2000" />
+      <workItem from="1710729489541" duration="18000" />
+      <workItem from="1710731933947" duration="709000" />
+      <workItem from="1710732753642" duration="2482000" />
+      <workItem from="1710736051512" duration="413000" />
+      <workItem from="1710736475018" duration="3520000" />
+      <workItem from="1710752816582" duration="1274000" />
+      <workItem from="1710754104986" duration="80000" />
+      <workItem from="1710754193998" duration="7806000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
