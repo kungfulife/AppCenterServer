@@ -1,3 +1,5 @@
+mod userauth;
+
 use actix::{Actor, StreamHandler};
 use actix_web::{App, get, HttpResponse, HttpServer, HttpRequest, post, Responder, web};
 use actix_web_actors::ws;
@@ -8,6 +10,23 @@ use sqlx::PgPool;
 use sqlx::postgres::PgPoolOptions;
 use sqlx::types::Uuid;
 use actix::prelude::*;
+use std::collections::HashSet;
+use std::sync::Mutex;
+
+lazy_static::lazy_static! {
+    static ref ACTIVE_SESSIONS: Mutex<HashSet<String>> = Mutex::new(HashSet::new());
+}
+
+fn generate_session_token(user_id: i32) -> String {
+	// In a real application, you'd want something more secure, like a JWT
+	let token = format!("session_{}", user_id);
+	ACTIVE_SESSIONS.lock().unwrap().insert(token.clone());
+	token
+}
+
+fn is_session_token_valid(token: &str) -> bool {
+	ACTIVE_SESSIONS.lock().unwrap().contains(token)
+}
 
 static LATEST_APP_VERSION: &str = "0.0.1";
 static SERVER_VERSION: &str = "0.0.1";
@@ -96,8 +115,12 @@ async fn list_users(db_pool: web::Data<PgPool>) -> HttpResponse {
 	HttpResponse::Ok().body(response_body)
 }
 
-#[post("/login")]
+
+
+
+
 async fn login(login_info: web::Json<LoginRequest>, db_pool: web::Data<PgPool>) -> impl Responder {
+
 	let conn = db_pool.get_ref();
 	let user = sqlx::query_as!(
         User,
@@ -123,7 +146,8 @@ async fn login(login_info: web::Json<LoginRequest>, db_pool: web::Data<PgPool>) 
 
 			if Some(login_info.mac_address.clone()).unwrap().to_string() == user.mac_address {
 				// Success login
-				HttpResponse::Ok().json(json!({"status": "success", "user": user}))
+				//HttpResponse::Ok().json(json!({"status": "success", "user": user}))
+				HttpResponse::Ok().finish()
 			} else {
 				// MAC address does not match
 				HttpResponse::Unauthorized().finish()
@@ -136,6 +160,7 @@ async fn login(login_info: web::Json<LoginRequest>, db_pool: web::Data<PgPool>) 
 		}
 	}
 }
+
 
 // Websocket stuff
 
@@ -190,6 +215,7 @@ async fn main() -> std::io::Result<()> {
 			.route("/create_user", web::get().to(create_user_form))
 			.route("/add_user", web::post().to(add_user))
 			.route("/list_users", web::get().to(list_users))
+			.route("/login", web::post().to(login))
 	})
 		.bind("127.0.0.1:9926")?
 		.run()

@@ -32,3 +32,5 @@ serde_json = "1.0.114" # Adjust if you're directly using Uuid in your Rust code.
 json = "0.12"
 actix = "0.13.3"
 actix-web-actors = "4.0"
+jsonwebtoken = "9.2.0"
+lazy_static = "1.4.0"

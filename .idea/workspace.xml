@@ -7,9 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eb37f1c-6eeb-4725-9580-440c950fa513" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/create_user.html" afterDir="false" />
+    <list default="true" id="2eb37f1c-6eeb-4725-9580-440c950fa513" name="Changes" comment="Actix-web web server implementation - initial commit&#10;&#10;- Users can check versions&#10;- Admin can create account&#10;- very minor websocket functionality">
+      <change afterPath="$PROJECT_DIR$/src/userauth.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
@@ -51,7 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/facky/Documents/My Projects/Googlag-server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/facky/Documents/My Projects/AppCenterServer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,6 +58,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
     &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects.stats&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -139,7 +139,13 @@
       <workItem from="1710736475018" duration="3520000" />
       <workItem from="1710752816582" duration="1274000" />
       <workItem from="1710754104986" duration="80000" />
-      <workItem from="1710754193998" duration="7806000" />
+      <workItem from="1710754193998" duration="8059000" />
+      <workItem from="1710771928949" duration="2000" />
+      <workItem from="1710771934129" duration="7422000" />
+      <workItem from="1710996016640" duration="337000" />
+      <workItem from="1711048010331" duration="787000" />
+      <workItem from="1711213930821" duration="1426000" />
+      <workItem from="1711401614864" duration="12123000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -149,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710527911271</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actix-web web server implementation - initial commit&#10;&#10;- Users can check versions&#10;- Admin can create account&#10;- very minor websocket functionality">
+      <option name="closed" value="true" />
+      <created>1710771830847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710771830847</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +171,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Actix-web web server implementation - initial commit&#10;&#10;- Users can check versions&#10;- Admin can create account&#10;- very minor websocket functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actix-web web server implementation - initial commit&#10;&#10;- Users can check versions&#10;- Admin can create account&#10;- very minor websocket functionality" />
   </component>
 </project>
